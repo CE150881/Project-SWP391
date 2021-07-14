@@ -92,24 +92,24 @@
                     <form action="signup" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form">
                         <div class="u-form-group u-form-group-1">
                             <label for="text-9294" class="u-custom-font u-label u-label-1">Tên đăng nhập</label>
-                            <input type="text" value="${user}" placeholder="Nhập tên đăng nhập" id="text-9294" name="user" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white" pattern="[A-Za-z0-9]{5,20}" title="Letters and numbers only, please." required="required"><p class="text-danger"> ${error1}</p>
+                            <input type="text" value="${user}" placeholder="Nhập tên đăng nhập" id="text-9294" name="user" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white" pattern="[A-Za-z0-9]{5,20}" title="Nhập 5 đến 20 kí tự bao gồm chữ cái và số." required="required"><p class="text-danger"> ${error1}</p>
                         </div>
                         <div class="u-form-group u-form-group-2">
                             <label for="text-18e9" class="u-custom-font u-label u-label-2">Mật khẩu </label>
-                            <input type="password" placeholder="Xác nhận mật khẩu" id="text-18e9" name="pass" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white" maxlength="16" minlength="8" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" required="required"><p class="text-danger"> ${error5}</p>
+                            <input type="password" placeholder="Xác nhận mật khẩu" id="text-18e9" value="${pass}" name="pass" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white" maxlength="20" minlength="8" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" required="required" title="Nhập 8 đến 20 kí tự."><p class="text-danger"> ${error5}</p>
                         </div>
                         <div class="u-form-group u-form-group-3">
                             <label for="text-d755" class="u-custom-font u-label u-label-3">Xác nhận mật khẩu </label>
-                            <input type="password" id="text-d755" name="repass" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white" maxlength="16" minlength="8" placeholder="Xác nhận mật khẩu mới" onmouseover="mouseoverPass2();" onmouseout="mouseoutPass2();" required="required"><p class="text-danger"> ${error5}</p>
+                            <input type="password" id="text-d755" name="repass" value="${re_pass}" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white" maxlength="16" minlength="8" placeholder="Xác nhận mật khẩu mới" onmouseover="mouseoverPass2();" onmouseout="mouseoutPass2();" required="required"><p class="text-danger"> ${error5}</p>
                         </div>
 
                         <div class="u-form-group u-form-phone">
                             <label for="email-158d" class="u-custom-font u-label u-label-5">Số điện thoại</label>
-                            <input type="tel" pattern="[0][0-9]{9}" value="${phone}" id="phone11" name="phone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white"  required="required" maxlength="10" placeholder="Nhập số điện thoại" ><p class="text-danger"> ${error2}</p>
+                            <input type="tel" pattern="[0][0-9]{9}" value="${phone}" id="phone11" name="phone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white"  required="required" maxlength="10" placeholder="Nhập số điện thoại" title="Nhập 10 kí tự chỉ bao gồm số."><p class="text-danger"> ${error2}</p>
                         </div>
                         <div class="u-form-email u-form-group u-form-group-4">
                             <label for="address-f3ab" class="u-custom-font u-label u-label-4">Email</label>
-                            <input type="email" placeholder="Email"id="address-f3ab" value="${mail}" name="mail" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white" required="required"><p class="text-danger"> ${error3}</p>
+                            <input type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Email"id="address-f3ab" value="${mail}" name="mail" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white" required="required"><p class="text-danger"> ${error3}</p>
                         </div>
                         <div class="u-form-group u-form-select u-form-group-6">
                             <label for="select-f270" class="u-custom-font u-label u-label-6">Giới tính</label>
@@ -140,10 +140,10 @@
                 </a>
                 <div class="u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="1500" data-image-height="1500" data-href="home" data-page-id="150508545"></div><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-2" data-href="mailto:letrangfood@gmail.com"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d62d"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-d62d" style="enable-background:new 0 0 512 512;"><rect x="64" y="64" style="fill:#ECEFF1;" width="384" height="384"></rect><polygon style="fill:#CFD8DC;" points="256,296.384 448,448 448,148.672 "></polygon><path style="fill:#F44336;" d="M464,64h-16L256,215.616L64,64H48C21.504,64,0,85.504,0,112v288c0,26.496,21.504,48,48,48h16V148.672  l192,147.68L448,148.64V448h16c26.496,0,48-21.504,48-48V112C512,85.504,490.496,64,464,64z"></path></svg></span><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-3" data-href="https://www.facebook.com/comgaletrang" data-target="_blank"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7edf"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-7edf"><path d="m483.738281 0h-455.5c-15.597656.0078125-28.24218725 12.660156-28.238281 28.261719v455.5c.0078125 15.597656 12.660156 28.242187 28.261719 28.238281h455.476562c15.605469.003906 28.257813-12.644531 28.261719-28.25 0-.003906 0-.007812 0-.011719v-455.5c-.007812-15.597656-12.660156-28.24218725-28.261719-28.238281zm0 0" fill="currentColor"></path><path d="m353.5 512v-198h66.75l10-77.5h-76.75v-49.359375c0-22.386719 6.214844-37.640625 38.316406-37.640625h40.683594v-69.128906c-7.078125-.941406-31.363281-3.046875-59.621094-3.046875-59 0-99.378906 36-99.378906 102.140625v57.035156h-66.5v77.5h66.5v198zm0 0" fill="#fff"></path></svg></span>
                 <p class="u-custom-font u-small-text u-text u-text-variant u-text-4">GIAO HÀNG MIỄN PHÍ</p>
-                <a href="Chính-sách-hoạt-động.html" data-page-id="72988464" class="u-active-none u-border-1 u-border-active-palette-2-dark-1 u-border-hover-black u-border-white u-btn u-button-style u-custom-font u-hover-none u-none u-text-body-alt-color u-text-hover-black u-btn-2">Chính sách hoạt động<br>
+                <a href="Chính-sách-hoạt-động.jsp" data-page-id="72988464" class="u-active-none u-border-1 u-border-active-palette-2-dark-1 u-border-hover-black u-border-white u-btn u-button-style u-custom-font u-hover-none u-none u-text-body-alt-color u-text-hover-black u-btn-2">Chính sách hoạt động<br>
                 </a>
-                <a href="Hệ-thống-cửa-hàng.html" data-page-id="219125604" class="u-active-none u-border-1 u-border-active-palette-2-dark-1 u-border-hover-black u-border-white u-btn u-button-style u-custom-font u-hover-none u-none u-text-body-alt-color u-text-hover-black u-btn-3">Hệ thống cửa hàng</a>
-                <a href="LIÊN-HỆ.html" data-page-id="80271350" class="u-active-none u-border-1 u-border-hover-black u-border-white u-btn u-button-style u-custom-font u-hover-none u-none u-text-body-alt-color u-text-hover-black u-btn-4">Liên hệ<br>
+                <a href="Hệ-thống-cửa-hàng.jsp" data-page-id="219125604" class="u-active-none u-border-1 u-border-active-palette-2-dark-1 u-border-hover-black u-border-white u-btn u-button-style u-custom-font u-hover-none u-none u-text-body-alt-color u-text-hover-black u-btn-3">Hệ thống cửa hàng</a>
+                <a href="contact.jsp" data-page-id="80271350" class="u-active-none u-border-1 u-border-hover-black u-border-white u-btn u-button-style u-custom-font u-hover-none u-none u-text-body-alt-color u-text-hover-black u-btn-4">Liên hệ<br>
                 </a>
             </div></footer>
 

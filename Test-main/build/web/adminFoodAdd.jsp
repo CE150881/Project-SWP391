@@ -38,7 +38,7 @@
                         </div>
                         <div class="input-form">
                             <span>Giá Món Ăn</span>
-                            <input type="number" name="foodPrice" placeholder="FoodPrice" min="20000" max="500000" pattern="[3-9]|[1-3][0-9]|4[0-2]" title="Vui Lòng nhập số từ 20000 đến 500000">
+                            <input type="number" name="foodPrice" placeholder="FoodPrice" min="0" max="100000" pattern="[3-9]|[1-3][0-9]|4[0-2]" title="Vui Lòng nhập số từ 0 đến 100000">
                         </div>
                         <div class="input-form">
                             <span>Hình Món Ăn</span>

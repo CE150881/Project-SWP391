@@ -24,10 +24,10 @@ import static javax.swing.text.html.FormSubmitEvent.MethodType.POST;
 public class DBConnection {
 
     private static final String HOST = "localhost";
-    private static final String PORT ="10";
+    private static final String PORT ="3306";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "";
-    private static final String DBNAME = "letrangdb-2";
+    private static final String DBNAME = "letrangdb";
 
 //    public static Connection getConnection() throws SQLException, ClassNotFoundException {
 //        Class.forName("com.mysql.cj.jdbc.Driver");

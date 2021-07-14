@@ -42,10 +42,15 @@ public class SignupControl extends HttpServlet {
         String email = request.getParameter("mail");
         String gender = request.getParameter("gender");
 
-       
         if (!pass.equals(re_pass)) {
             request.setAttribute("error5", "Password not match");
-            request.getRequestDispatcher("NewSignUp.jsp").forward(request, response);
+            request.setAttribute("user", user);
+            request.setAttribute("phone", phone);
+            request.setAttribute("mail", email);
+            request.setAttribute("pass", pass);
+            request.setAttribute("re_pass", re_pass);
+            request.getRequestDispatcher("signup.jsp").forward(request, response);
+
         } else {
             DAO dao = new DAO();
             User u = dao.checkAccountExist(user);
@@ -56,61 +61,70 @@ public class SignupControl extends HttpServlet {
                 dao.signup(user, pass, phone, email, gender);
                 response.sendRedirect("login.jsp");
 
-            } else if(p == null && m == null) {
+            } else if (p == null && m == null) {
                 // day ve trang login.jsp
                 request.setAttribute("error1", "Tên đăng nhập đã được sử dụng");
                 request.setAttribute("user", user);
                 request.setAttribute("phone", phone);
                 request.setAttribute("mail", email);
+                request.setAttribute("pass", pass);
+                request.setAttribute("re_pass", re_pass);
                 request.getRequestDispatcher("signup.jsp").forward(request, response);
-            }
-            else if(u == null && m == null) {
+
+            } else if (u == null && m == null) {
                 // day ve trang login.jsp
                 request.setAttribute("error2", "Số điện thoại đã được sử dụng");
                 request.setAttribute("user", user);
                 request.setAttribute("phone", phone);
                 request.setAttribute("mail", email);
+                request.setAttribute("pass", pass);
+                request.setAttribute("re_pass", re_pass);
                 request.getRequestDispatcher("signup.jsp").forward(request, response);
-            }
-            else if(p == null && u == null) {
+            } else if (p == null && u == null) {
                 // day ve trang login.jsp
                 request.setAttribute("error3", "Email đã được sử dụng");
                 request.setAttribute("user", user);
                 request.setAttribute("phone", phone);
                 request.setAttribute("mail", email);
+                request.setAttribute("pass", pass);
+                request.setAttribute("re_pass", re_pass);
                 request.getRequestDispatcher("signup.jsp").forward(request, response);
-            }
-            else if(u == null){
+            } else if (u == null) {
                 request.setAttribute("error2", "Số điện thoại đã được sử dụng");
                 request.setAttribute("user", user);
                 request.setAttribute("phone", phone);
                 request.setAttribute("mail", email);
+                request.setAttribute("pass", pass);
+                request.setAttribute("re_pass", re_pass);
                 request.setAttribute("error3", "Email đã được sử dụng");
                 request.getRequestDispatcher("signup.jsp").forward(request, response);
-            }
-            else if(p == null){
+            } else if (p == null) {
                 request.setAttribute("error1", "Tên đăng nhập đã được sử dụng");
                 request.setAttribute("user", user);
                 request.setAttribute("phone", phone);
                 request.setAttribute("mail", email);
+                request.setAttribute("pass", pass);
+                request.setAttribute("re_pass", re_pass);
                 request.setAttribute("error3", "Email đã được sử dụng");
                 request.getRequestDispatcher("signup.jsp").forward(request, response);
-            }
-            else if(m == null){
+            } else if (m == null) {
                 request.setAttribute("error1", "Tên đăng nhập đã được sử dụng");
                 request.setAttribute("user", user);
                 request.setAttribute("phone", phone);
                 request.setAttribute("mail", email);
+                request.setAttribute("pass", pass);
+                request.setAttribute("re_pass", re_pass);
                 request.setAttribute("error2", "Số điện thoại đã được sử dụng");
                 request.getRequestDispatcher("signup.jsp").forward(request, response);
-            }
-            else{
+            } else {
                 request.setAttribute("error1", "Tên đăng nhập đã được sử dụng");
                 request.setAttribute("user", user);
                 request.setAttribute("error2", "Số điện thoại đã được sử dụng");
                 request.setAttribute("phone", phone);
                 request.setAttribute("error3", "Email đã được sử dụng");
                 request.setAttribute("mail", email);
+                request.setAttribute("pass", pass);
+                request.setAttribute("re_pass", re_pass);
                 request.getRequestDispatcher("signup.jsp").forward(request, response);
             }
         }

@@ -64,6 +64,9 @@ public class updatePass extends HttpServlet {
                 } else {
                     String msg = "New Password is not match to Renew Password";
                     request.setAttribute("FALIEDRENEWPASS", msg);
+                    request.setAttribute("pass", passwordCurrent);
+                    request.setAttribute("repass", newPassword);
+                    request.setAttribute("newrepass", reNewPassword);
                 }
             } else {
                 String msg = "Password is not correct";

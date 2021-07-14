@@ -92,7 +92,7 @@
                             <tbody class="u-align-center u-table-body">
                                 <tr style="height: 55px;">
                                     <td class="u-table-cell">
-                                        <a href="profile" data-page-id="123672971" class="u-active-none u-border-none u-btn u-button-link u-button-style u-custom-font u-hover-none u-none u-text-body-alt-color u-text-hover-black u-btn-1">${sessionScope.acc.userName}</a>
+                                        <a href="infoUser.jsp" data-page-id="123672971" class="u-active-none u-border-none u-btn u-button-link u-button-style u-custom-font u-hover-none u-none u-text-body-alt-color u-text-hover-black u-btn-1">${sessionScope.acc.userName}</a>
                                     </td>
                                     <td class="u-table-cell">
                                         <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-custom-font u-hover-none u-none u-text-body-alt-color u-text-hover-black u-btn-2" href="logout" data-page-id="383923227">Đăng xuất</a>
@@ -106,36 +106,19 @@
             </div></header>
 
         <section class="u-clearfix u-palette-3-light-3 u-section-1" id="sec-7165">
-            <p class="u-custom-font u-text u-text-1">THỰC ĐƠN</p><span class="u-icon u-icon-circle u-icon-1" data-href="home" data-page-id="150508545"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 443.52 443.52" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f62a"></use></svg><svg class="u-svg-content" viewBox="0 0 443.52 443.52" x="0px" y="0px" id="svg-f62a" style="enable-background:new 0 0 443.52 443.52;"><g><g><path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8    c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712    L143.492,221.863z"></path></g></g></svg></span>
+            <p class="u-custom-font u-text u-text-1">THỰC ĐƠN</p>
+
+            <span class="u-icon u-icon-circle u-icon-1" data-href="home" data-page-id="150508545"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 443.52 443.52" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f62a"></use></svg><svg class="u-svg-content" viewBox="0 0 443.52 443.52" x="0px" y="0px" id="svg-f62a" style="enable-background:new 0 0 443.52 443.52;"><g><g><path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8    c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712    L143.492,221.863z"></path></g></g></svg></span>           
+            <a href="home" data-page-id="207006172" class="u-active-none u-btn u-button-style u-custom-font u-hover-none u-none u-text-black" style="font-family: Alata; font-size: 1.125rem; margin: -42px auto 22px 0; padding-left: 200px">Trang chủ</a>
+
             <div class="u-form u-form-1">
-                <form action="#" method="POST" class="u-clearfix u-form-horizontal u-form-spacing-14 u-inner-form" style="padding: 8px;" source="custom">
-                    <div class="u-form-group u-form-name">
-                        <label for="name-558c" class="u-form-control-hidden u-label">Name</label>
-                        <input type="text" placeholder="Tìm kiếm" id="name-558c" name="name" class="u-border-2 u-border-black u-input u-input-rectangle u-radius-8">
-                    </div>
-                    <div class="u-form-group u-form-submit">
-                        <a href="#" class="u-black u-border-2 u-border-black u-btn u-btn-round u-btn-submit u-button-style u-hover-white u-radius-8 u-text-body-alt-color u-text-hover-black u-btn-1"><span class="u-icon u-icon-2"><svg class="u-svg-content" viewBox="0 0 56.966 56.966" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
-                                                                                                                                                                                                        s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
-                                                                                                                                                                                                        c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
-                                                                                                                                                                                                        s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg><img></span>&nbsp;<br>
-                        </a>
-                        <input type="submit" value="submit" class="u-form-control-hidden">
-                    </div>
-                    <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
-                    <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
-                    <input type="hidden" value="" name="recaptchaResponse">
+                <form action="search" method="post">                   
+                    <input type="text" name="search"/>
+                    <button type="submit" value="tim kiem"><i class="fa fa-search"></i>Tìm kiếm</button>                  
                 </form>
             </div>
-            <a href="TRANG-CHỦ.html" data-page-id="150508545" class="u-active-none u-btn u-button-style u-custom-font u-hover-none u-none u-text-black u-btn-2">Trang chủ</a>
+
         </section>
-
-
-
-        <form action="search" method="post">
-            <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
-            <button type="submit" value="tim kiem"><i class="fa fa-search"></i>Tim kiem</button>
-        </form>
-
 
         <!--menu-->
         <section class="u-align-left u-clearfix u-palette-3-light-3 u-section-2" id="sec-34ed">
@@ -145,13 +128,13 @@
 
                     <ul class="u-spacing-30 u-tab-list u-unstyled" style="padding-top: 25px" role="tablist">
 
-                        <li class="u-tab-item" role="presentation">
-                            <strong><a class="b" style="color: black; text-transform: uppercase; font-family: Alata; font-size: 20px" href="menu" role="tab"  aria-selected="true">Tất cả</a></strong>
+                        <li class="u-tab-item " role="presentation">
+                            <strong><a class="" style="color: #dc0000; text-transform: uppercase; font-family: Alata; font-size: 20px" href="menu" role="tab"  aria-selected="true">Tất cả</a></strong>
                         </li>
 
                         <c:forEach items="${listCC}" var="c">
                             <li class="u-tab-item" role="presentation">
-                                <strong><a class="c" style="color: black; text-transform: uppercase; font-family: Alata; font-size: 20px" href="combo?categoryID=${c.categoryID}" role="tab" aria-selected="false">${c.categoryName}</a><strong
+                                <strong><a class="" style="color: #dc0000; text-transform: uppercase; font-family: Alata; font-size: 20px" href="combo?categoryID=${c.categoryID}" role="tab" aria-selected="false">${c.categoryName}</a><strong
                                         </li> 
                                     </c:forEach>
                                     </ul>
@@ -192,8 +175,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-
                                     </div>
                                     </div>
                                     </section>

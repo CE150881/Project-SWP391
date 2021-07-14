@@ -116,9 +116,11 @@
             </div></header>
 
 
-        <section class="u-clearfix u-palette-3-light-3 u-section-1" id="sec-82e2">
+        <section class="u-clearfix u-palette-3-light-3 u-section-1" id="sec-82e2" style="padding-top: 30px">
             <div class="u-clearfix u-sheet u-sheet-1">
-                <p class="u-custom-font u-text u-text-custom-color-3 u-text-1">GIỎ HÀNG CỦA BẠN</p><span class="u-icon u-icon-circle u-text-black u-icon-1" data-href="print" data-page-id="207006172"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-22e4"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-22e4" style="enable-background:new 0 0 512 512;"><g><g><g><path d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,490.667     C126.604,490.667,21.333,385.396,21.333,256S126.604,21.333,256,21.333S490.667,126.604,490.667,256S385.396,490.667,256,490.667     z"></path><path d="M306.208,131.125c-4.167-4.167-10.917-4.167-15.083,0L173.792,248.458c-4.167,4.167-4.167,10.917,0,15.083     l117.333,117.333c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083     L196.417,256l109.792-109.792C310.375,142.042,310.375,135.292,306.208,131.125z"></path>
+                <p class="u-custom-font u-text u-text-1" style="color: black">GIỎ HÀNG CỦA BẠN</p>
+                
+            <span class="u-icon u-icon-circle u-icon-1" data-href="menu" data-page-id="150508545"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 443.52 443.52" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f62a"></use></svg><svg class="u-svg-content" viewBox="0 0 443.52 443.52" x="0px" y="0px" id="svg-f62a" style="enable-background:new 0 0 443.52 443.52;"><g><g><path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8    c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712    L143.492,221.863z"></path></g></g></svg></span>           
                     </g>
                     </g>
                     </g></svg></span>
@@ -126,17 +128,15 @@
             </div>
         </section>
 
-        <section class="u-clearfix u-section-3 skin1" id="sec-f80d">
+        <section class="u-clearfix u-section-3 skin1 u-palette-3-light-3" id="sec-f80d">
             <div class="u-clearfix u-sheet u-sheet-1 skin">
-
-
 
                 <c:set var="checkList" value="${requestScope.list}" />
                 <c:if test="${not empty checkList}" >
                     <div class="shopping-cart skin">
                         <div class="px-4 px-lg-0 skin">
                             <form action="cart2" method="GET">
-                                <div class="pb-5 skin">
+                                <div class="pb-5 skin" style="font-family: Alata">
                                     <div class="container skin">
                                         <div class="row skin">
                                             <div class="col-lg-12 p-5  rounded shadow-sm mb-5 skin">
@@ -172,13 +172,13 @@
                                                                             </div>
                                                                         </div>
                                                                     </th>
-                                                                    <td class="align-middle"><strong>${o.foodPrice}</strong><input type="hidden" value="${o.foodPrice}" name="txtFoodPrice"/></td>
+                                                                    <td class="align-middle"><strong>${o.foodPrice} đ</strong><input type="hidden" value="${o.foodPrice}" name="txtFoodPrice"/></td>
                                                                     <td class="align-middle">
                                                                         
                                                                         <input type="hidden" name="txtFoodID" value="${o.foodID}"/>
-                                                                        <a href="sub?id=${o.foodID}"><input class="minus is-form" type="button" value="-"/></a> <in
+                                                                        <a href="sub?id=${o.foodID}"><input class="minus is-form" type="button" value="-" style="color: black"/></a> <in
                                                                         <strong>${o.amount}</strong><input type="hidden" value="${o.amount}" name="txtAmount"/>
-                                                                        <a href="cart?id=${o.foodID}"><input class="plus is-form" type="button" value="+"/></a>
+                                                                        <a href="cart?id=${o.foodID}"><input class="plus is-form" type="button" value="+" style="color: black"/></a>
                                                                     </td>
                                                                     <td class="align-middle"><a href="remove?id=${o.foodID}" class="text-dark">
                                                                             <input type="button" value="Xóa"/>
@@ -194,21 +194,21 @@
                                         </div>
 
                                         <div class="row py-5 p-4 skin1 rounded shadow-sm">
-                                            <div class="col-lg-6">
-                                                <strong><label>Địa chỉ mua hàng</label><br></strong>
-                                                <input type="text" name="txtAddress" required />
+                                            <div class="col-lg-6" >
+                                                <strong><label style="font-family: Alata; font-size: 1.3rem">Địa chỉ mua hàng</label><br></strong>
+                                                <input type="text" name="txtAddress" placeholder="Nhập địa chỉ mua hàng" required style="width: 70%; padding: 10px 18px; font-family: Alata"/>
                                             </div>
                                             <div class="col-lg-6">
-                                                <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thành tiền</div>
+                                                <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold" style="font-family: Alata">Thành tiền</div>
                                                 <div class="p-4">
                                                     <ul class="list-unstyled mb-4">
-                                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong>
+                                                        <li class="d-flex justify-content-between py-3 border-bottom" style="font-family: Alata"><strong class="text-muted">Tổng tiền hàng</strong>
 
                                                             <h5 class="font-weight-bold">${sum} đ</h5>
                                                             <input type="hidden" value="${sum}" name="txtSum"/>
                                                         </li>
-                                                    </ul><a href= class="btn btn-dark rounded-pill py-2 btn-block">Mua hàng</a>
-                                                    <input type="submit" value="Thanh toán"/>
+                                                    </ul>
+                                                        <input type="submit" value="Thanh toán" style="font-family: Alata; background-color: #dc0000; color: white; border-color: #dc0000; border-radius: 8px; margin-left: 350px; padding: 10px 20px"/>
                                                 </div>
                                             </div>
                                         </div>
