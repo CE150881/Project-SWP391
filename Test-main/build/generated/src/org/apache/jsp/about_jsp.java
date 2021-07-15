@@ -4,15 +4,13 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class Cart_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class about_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
   private static java.util.List<String> _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_forEach_var_items;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_set_var_value_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_if_test;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -22,14 +20,10 @@ public final class Cart_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _jspx_tagPool_c_forEach_var_items = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _jspx_tagPool_c_set_var_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_c_if_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
-    _jspx_tagPool_c_forEach_var_items.release();
-    _jspx_tagPool_c_set_var_value_nobody.release();
     _jspx_tagPool_c_if_test.release();
   }
 
@@ -60,6 +54,7 @@ public final class Cart_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html style=\"font-size: 16px;\" lang=\"vi-VN\">\n");
       out.write("    <head>\n");
@@ -68,19 +63,14 @@ public final class Cart_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <meta name=\"keywords\" content=\"\">\n");
       out.write("        <meta name=\"description\" content=\"\">\n");
       out.write("        <meta name=\"page_type\" content=\"np-template-header-footer-from-plugin\">\n");
-      out.write("        <title>Giỏ hàng</title>\n");
+      out.write("        <title>GIỚI THIỆU</title>\n");
       out.write("        <link rel=\"stylesheet\" href=\"nicepage.css\" media=\"screen\">\n");
-      out.write("        <link rel=\"stylesheet\" href=\"Giỏ-hàng.css\" media=\"screen\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"GIỚI-THIỆU.css\" media=\"screen\">\n");
       out.write("        <script class=\"u-script\" type=\"text/javascript\" src=\"jquery.js\" defer=\"\"></script>\n");
       out.write("        <script class=\"u-script\" type=\"text/javascript\" src=\"nicepage.js\" defer=\"\"></script>\n");
       out.write("        <meta name=\"generator\" content=\"Nicepage 3.16.0, nicepage.com\">\n");
       out.write("        <link id=\"u-theme-google-font\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i\">\n");
       out.write("        <link id=\"u-page-google-font\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Alata:400|Coiny:400\">\n");
-      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n");
-      out.write("        <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\n");
-      out.write("        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\n");
-      out.write("        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\n");
-      out.write("\n");
       out.write("\n");
       out.write("\n");
       out.write("\n");
@@ -90,15 +80,14 @@ public final class Cart_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            \"name\": \"comgaletrang\",\n");
       out.write("            \"url\": \"index.html\"\n");
       out.write("            }</script>\n");
-      out.write("        <meta property=\"og:title\" content=\"Giỏ hàng\">\n");
+      out.write("        <meta property=\"og:title\" content=\"GIỚI THIỆU\">\n");
       out.write("        <meta property=\"og:type\" content=\"website\">\n");
       out.write("        <meta name=\"theme-color\" content=\"#478ac9\">\n");
       out.write("        <link rel=\"canonical\" href=\"index.html\">\n");
       out.write("        <meta property=\"og:url\" content=\"index.html\">\n");
-      out.write("        \n");
       out.write("    </head>\n");
-      out.write("    <body class=\"u-body\">        <header class=\"u-align-center-xs u-clearfix u-custom-color-3 u-header u-sticky u-header\" id=\"sec-e122\"><div class=\"u-clearfix u-sheet u-sheet-1\">\n");
-      out.write("                <div class=\"u-image u-image-circle u-preserve-proportions u-image-1\" style=\"margin-left: -130px\" alt=\"\" data-image-width=\"1500\" data-image-height=\"1500\" data-href=\"home\" data-page-id=\"150508545\"></div>\n");
+      out.write("    <body class=\"u-body\"><header class=\"u-align-center-xs u-clearfix u-custom-color-3 u-header u-sticky u-header\" id=\"sec-e122\"><div class=\"u-clearfix u-sheet u-sheet-1\">\n");
+      out.write("                <div class=\"u-image u-image-circle u-preserve-proportions u-image-1\" style=\"margin-left: -130px\" alt=\"\" data-image-width=\"1500\" data-image-height=\"1500\" data-href=\"TRANG-CHỦ.html\" data-page-id=\"150508545\"></div>\n");
       out.write("                <nav data-position=\"\" class=\"u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1\">\n");
       out.write("                    <div class=\"menu-collapse u-custom-font\" style=\"font-size: 1.25rem; font-weight: 700; font-family: Alata;\">\n");
       out.write("                        <a class=\"u-button-style u-custom-active-color u-custom-border-radius u-custom-text-active-color u-custom-text-hover-color u-nav-link\" href=\"#\">\n");
@@ -108,15 +97,13 @@ public final class Cart_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            </defs></svg>\n");
       out.write("                        </a>\n");
       out.write("                    </div>\n");
-      out.write("                    <div class=\"u-custom-menu u-nav-container\" style=\"margin-left: -90px\">\n");
-      out.write("                        <ul class=\"u-custom-font u-nav u-unstyled u-nav-1\">\n");
-      out.write("                            <li class=\"u-nav-item\"><a class=\"u-button-style u-nav-link u-text-active-black\" href=\"home\" style=\"padding: 10px 75px;\">TRANG CHỦ</a>\n");
+      out.write("                    <div class=\"u-custom-menu u-nav-container\"style=\"margin-left: -90px\">\n");
+      out.write("                        <ul class=\"u-custom-font u-nav u-unstyled u-nav-1\"><li class=\"u-nav-item\"><a class=\"u-button-style u-nav-link u-text-active-black\" href=\"home\" style=\"padding: 10px 75px;\">TRANG CHỦ</a>\n");
       out.write("                            </li><li class=\"u-nav-item\"><a class=\"u-button-style u-nav-link u-text-active-black\" href=\"menu\" style=\"padding: 10px 75px;\">THỰC ĐƠN</a>\n");
       out.write("                            </li><li class=\"u-nav-item\"><a class=\"u-button-style u-nav-link u-text-active-black\" href=\"about.jsp\" style=\"padding: 10px 75px;\">GIỚI THIỆU</a>\n");
       out.write("                            </li><li class=\"u-nav-item\"><a class=\"u-button-style u-nav-link u-text-active-black\" href=\"contact.jsp\" style=\"padding: 10px 75px;\">LIÊN HỆ</a>\n");
       out.write("                            </li></ul>\n");
       out.write("                    </div>\n");
-      out.write("\n");
       out.write("                </nav>\n");
       out.write("\n");
       out.write("                ");
@@ -138,37 +125,18 @@ public final class Cart_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("            </div></header>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("        <section class=\"u-clearfix u-palette-3-light-3 u-section-1\" id=\"sec-82e2\" style=\"padding-top: 30px\">\n");
-      out.write("            <div class=\"u-clearfix u-sheet u-sheet-1\">\n");
-      out.write("                <p class=\"u-custom-font u-text u-text-1\" style=\"color: black\">GIỎ HÀNG CỦA BẠN</p>\n");
-      out.write("                \n");
-      out.write("            <span class=\"u-icon u-icon-circle u-icon-1\" data-href=\"menu\" data-page-id=\"150508545\"><svg class=\"u-svg-link\" preserveAspectRatio=\"xMidYMin slice\" viewBox=\"0 0 443.52 443.52\" style=\"\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#svg-f62a\"></use></svg><svg class=\"u-svg-content\" viewBox=\"0 0 443.52 443.52\" x=\"0px\" y=\"0px\" id=\"svg-f62a\" style=\"enable-background:new 0 0 443.52 443.52;\"><g><g><path d=\"M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8    c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712    L143.492,221.863z\"></path></g></g></svg></span>           \n");
-      out.write("                    </g>\n");
-      out.write("                    </g>\n");
-      out.write("                    </g></svg></span>\n");
-      out.write("                <a href=\"menu\" data-page-id=\"207006172\" class=\"u-active-none u-btn u-button-style u-custom-font u-hover-none u-none u-text-black u-btn-1\">Thực đơn</a>\n");
+      out.write("        <section class=\"u-clearfix u-palette-3-light-3 u-section-1\" id=\"sec-908d\">\n");
+      out.write("            <div class=\"u-clearfix u-sheet u-valign-middle u-sheet-1\">\n");
+      out.write("                <div class=\"u-image u-image-circle u-preserve-proportions u-image-1\" alt=\"\" data-image-width=\"1500\" data-image-height=\"1500\"></div>\n");
+      out.write("                <p class=\"u-custom-font u-text u-text-body-color u-text-1\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ra mắt khách hàng từ tháng 6 năm 2015, đến nay cơm gà Lê Trang thực sự đã trở thành một trong những nhãn hiệu cơm gà tiện lợi uy tín trong lòng khách hàng với sự phục vụ chuyên nghiệp, chất lượng món ăn và hơn ai hết thương hiệu cơm gà Lê Trang chính là người tiên phong trong công tác phục vụ bữa ăn tiện lợi phù hợp với phần lớn khách hàng trong khu vực.</p>\n");
+      out.write("                <img class=\"u-image u-image-default u-image-2\" src=\"images/tixung1.jpg\" alt=\"\" data-image-width=\"284\" data-image-height=\"177\">\n");
+      out.write("                <p class=\"u-custom-font u-text u-text-body-color u-text-2\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Người bạn đồng hành cùng bữa trưa của nhân viên văn phòng. Với hệ thống cửa hàng rộng khắp nội ô thành phố Cần Thơ, Lê Trang đã tập trung phục vụ rất tốt cho khách hàng của mình như: Đông đảo các bạn sinh viên đặc biệt là nhân viên văn phòng hay đơn giản chỉ là những thực khách muốn thưởng thức một bữa cơm nhanh tiện dụng ở đây với bữa ăn được đảm bảo dinh dưỡng. Gà được dùng hoàn toàn là gà sạch không dùng bột ngọt và Lê Trang cũng là thương hiệu duy nhất tiên phong sử dụng hộp nhôm chuyên dụng cho thức ăn nóng. An Toàn cho sức khỏe người dùng. Đến với Lê Trang bạn sẽ thực sự cảm nhận được nhưng giá trị về dinh dưỡng, an toàn vệ sinh, ngon miệng và đẹp mắt. Thức ăn được xếp ngay ngắn đẹp mắt không chỉ vậy gạo nấu cơm cũng được chọn từ gạo tốt nhằm mang đến cho thực khách nguồn dinh dưỡng tốt từ bữa ăn chính trong ngày.&nbsp;</p>\n");
       out.write("            </div>\n");
       out.write("        </section>\n");
       out.write("\n");
-      out.write("        <section class=\"u-clearfix u-section-3 skin1 u-palette-3-light-3\" id=\"sec-f80d\">\n");
-      out.write("            <div class=\"u-clearfix u-sheet u-sheet-1 skin\">\n");
       out.write("\n");
-      out.write("                ");
-      if (_jspx_meth_c_set_0(_jspx_page_context))
-        return;
-      out.write("\n");
-      out.write("                ");
-      if (_jspx_meth_c_if_4(_jspx_page_context))
-        return;
-      out.write("                         \n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("            </div>\n");
-      out.write("        </section>\n");
       out.write("\n");
       out.write("\n");
       out.write("        <footer class=\"u-align-center u-clearfix u-custom-color-3 u-footer u-footer\" id=\"sec-8076\"><div class=\"u-clearfix u-sheet u-valign-middle u-sheet-1\">\n");
@@ -273,7 +241,7 @@ public final class Cart_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_if_2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n");
-        out.write("                    <div class=\"u-table u-table-responsive u-table-1\" style=\"margin-right: -100px\">\n");
+        out.write("                    <div class=\"u-table u-table-responsive u-table-1\"style=\"margin-right: -100px\">\n");
         out.write("                        <table class=\"u-table-entity\">\n");
         out.write("                            <colgroup>\n");
         out.write("                                <col width=\"50%\">\n");
@@ -318,7 +286,7 @@ public final class Cart_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_if_3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n");
-        out.write("                    <div class=\"u-table u-table-responsive u-table-1\" style=\"margin-right: -100px\">\n");
+        out.write("                    <div class=\"u-table u-table-responsive u-table-1\"style=\"margin-right: -100px\">\n");
         out.write("                        <table class=\"u-table-entity\">\n");
         out.write("                            <colgroup>\n");
         out.write("                                <col width=\"50%\">\n");
@@ -349,201 +317,6 @@ public final class Cart_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _jspx_tagPool_c_if_test.reuse(_jspx_th_c_if_3);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_set_0(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:set
-    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_set_0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _jspx_tagPool_c_set_var_value_nobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
-    _jspx_th_c_set_0.setPageContext(_jspx_page_context);
-    _jspx_th_c_set_0.setParent(null);
-    _jspx_th_c_set_0.setVar("checkList");
-    _jspx_th_c_set_0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${requestScope.list}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
-    int _jspx_eval_c_set_0 = _jspx_th_c_set_0.doStartTag();
-    if (_jspx_th_c_set_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_c_set_var_value_nobody.reuse(_jspx_th_c_set_0);
-      return true;
-    }
-    _jspx_tagPool_c_set_var_value_nobody.reuse(_jspx_th_c_set_0);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_if_4(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:if
-    org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_if_4 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _jspx_tagPool_c_if_test.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
-    _jspx_th_c_if_4.setPageContext(_jspx_page_context);
-    _jspx_th_c_if_4.setParent(null);
-    _jspx_th_c_if_4.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${not empty checkList}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null)).booleanValue());
-    int _jspx_eval_c_if_4 = _jspx_th_c_if_4.doStartTag();
-    if (_jspx_eval_c_if_4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      do {
-        out.write("\n");
-        out.write("                    <div class=\"shopping-cart skin\">\n");
-        out.write("                        <div class=\"px-4 px-lg-0 skin\">\n");
-        out.write("                            <form action=\"cart2\" method=\"GET\">\n");
-        out.write("                                <div class=\"pb-5 skin\" style=\"font-family: Alata\">\n");
-        out.write("                                    <div class=\"container skin\">\n");
-        out.write("                                        <div class=\"row skin\">\n");
-        out.write("                                            <div class=\"col-lg-12 p-5  rounded shadow-sm mb-5 skin\">\n");
-        out.write("\n");
-        out.write("                                                <!-- Shopping cart table -->\n");
-        out.write("                                                <div class=\"table-responsive skin\">\n");
-        out.write("                                                    <table class=\"table\">\n");
-        out.write("                                                        <thead>\n");
-        out.write("                                                            <tr>\n");
-        out.write("                                                                <th scope=\"col\" class=\"border-0 bg-light\">\n");
-        out.write("                                                                    <div class=\"p-2 px-3 text-uppercase\">Sản Phẩm</div>\n");
-        out.write("                                                                </th>\n");
-        out.write("                                                                <th scope=\"col\" class=\"border-0 bg-light\">\n");
-        out.write("                                                                    <div class=\"py-2 text-uppercase\">Đơn Giá</div>\n");
-        out.write("                                                                </th>\n");
-        out.write("                                                                <th scope=\"col\" class=\"border-0 bg-light\">\n");
-        out.write("                                                                    <div class=\"py-2 text-uppercase\">Số Lượng</div>\n");
-        out.write("                                                                </th>\n");
-        out.write("                                                                <th scope=\"col\" class=\"border-0 bg-light\">\n");
-        out.write("                                                                    <div class=\"py-2 text-uppercase\">Xóa</div>\n");
-        out.write("                                                                </th>\n");
-        out.write("                                                            </tr>\n");
-        out.write("                                                        </thead>\n");
-        out.write("                                                        <tbody>\n");
-        out.write("                                                            ");
-        if (_jspx_meth_c_forEach_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_if_4, _jspx_page_context))
-          return true;
-        out.write("\n");
-        out.write("                                                        </tbody>\n");
-        out.write("                                                    </table>\n");
-        out.write("                                                </div>\n");
-        out.write("                                                <!-- End -->\n");
-        out.write("                                            </div>\n");
-        out.write("                                        </div>\n");
-        out.write("\n");
-        out.write("                                        <div class=\"row py-5 p-4 skin1 rounded shadow-sm\">\n");
-        out.write("                                            <div class=\"col-lg-6\" >\n");
-        out.write("                                                <strong><label style=\"font-family: Alata; font-size: 1.3rem\">Địa chỉ mua hàng</label><br></strong>\n");
-        out.write("                                                <input type=\"text\" name=\"txtAddress\" placeholder=\"Nhập địa chỉ mua hàng\" required style=\"width: 70%; padding: 10px 18px; font-family: Alata\"/>\n");
-        out.write("                                            </div>\n");
-        out.write("                                            <div class=\"col-lg-6\">\n");
-        out.write("                                                <div class=\"bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold\" style=\"font-family: Alata\">Thành tiền</div>\n");
-        out.write("                                                <div class=\"p-4\">\n");
-        out.write("                                                    <ul class=\"list-unstyled mb-4\">\n");
-        out.write("                                                        <li class=\"d-flex justify-content-between py-3 border-bottom\" style=\"font-family: Alata\"><strong class=\"text-muted\">Tổng tiền hàng</strong>\n");
-        out.write("\n");
-        out.write("                                                            <h5 class=\"font-weight-bold\">");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sum}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-        out.write(" đ</h5>\n");
-        out.write("                                                            <input type=\"hidden\" value=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sum}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-        out.write("\" name=\"txtSum\"/>\n");
-        out.write("                                                        </li>\n");
-        out.write("                                                    </ul>\n");
-        out.write("                                                        <input type=\"submit\" value=\"Thanh toán\" style=\"font-family: Alata; background-color: #dc0000; color: white; border-color: #dc0000; border-radius: 8px; margin-left: 350px; padding: 10px 20px\"/>\n");
-        out.write("                                                </div>\n");
-        out.write("                                            </div>\n");
-        out.write("                                        </div>\n");
-        out.write("\n");
-        out.write("                                    </div>\n");
-        out.write("                                </div>\n");
-        out.write("                            </form>\n");
-        out.write("                        </div>\n");
-        out.write("                    </div>\n");
-        out.write("                ");
-        int evalDoAfterBody = _jspx_th_c_if_4.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-    }
-    if (_jspx_th_c_if_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_c_if_test.reuse(_jspx_th_c_if_4);
-      return true;
-    }
-    _jspx_tagPool_c_if_test.reuse(_jspx_th_c_if_4);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_forEach_0(javax.servlet.jsp.tagext.JspTag _jspx_th_c_if_4, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:forEach
-    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
-    _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
-    _jspx_th_c_forEach_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_if_4);
-    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${list}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
-    _jspx_th_c_forEach_0.setVar("o");
-    int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
-    try {
-      int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
-      if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-        do {
-          out.write("\n");
-          out.write("                                                                <tr>\n");
-          out.write("                                                                    <th scope=\"row\">\n");
-          out.write("                                                                        <div class=\"p-2\">\n");
-          out.write("                                                                            <img src=\"upload/");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.image}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" alt=\"\" width=\"70\" class=\"img-fluid rounded shadow-sm\">\n");
-          out.write("                                                                            <div class=\"ml-3 d-inline-block align-middle\">\n");
-          out.write("                                                                                <h5 class=\"mb-0\"> <a href=\"#\" class=\"text-dark d-inline-block\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.foodName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("</a></h5><span class=\"text-muted font-weight-normal font-italic\"></span>\n");
-          out.write("                                                                                <input type=\"hidden\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.foodName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" name=\"txtFoodName\"/>\n");
-          out.write("                                                                            </div>\n");
-          out.write("                                                                        </div>\n");
-          out.write("                                                                    </th>\n");
-          out.write("                                                                    <td class=\"align-middle\"><strong>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.foodPrice}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write(" đ</strong><input type=\"hidden\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.foodPrice}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" name=\"txtFoodPrice\"/></td>\n");
-          out.write("                                                                    <td class=\"align-middle\">\n");
-          out.write("                                                                        \n");
-          out.write("                                                                        <input type=\"hidden\" name=\"txtFoodID\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.foodID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\"/>\n");
-          out.write("                                                                        <a href=\"sub?id=");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.foodID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\"><input class=\"minus is-form\" type=\"button\" value=\"-\" style=\"color: black\"/></a> <in\n");
-          out.write("                                                                        <strong>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.amount}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("</strong><input type=\"hidden\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.amount}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" name=\"txtAmount\"/>\n");
-          out.write("                                                                        <a href=\"cart?id=");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.foodID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\"><input class=\"plus is-form\" type=\"button\" value=\"+\" style=\"color: black\"/></a>\n");
-          out.write("                                                                    </td>\n");
-          out.write("                                                                    <td class=\"align-middle\"><a href=\"remove?id=");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.foodID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" class=\"text-dark\">\n");
-          out.write("                                                                            <input type=\"button\" value=\"Xóa\"/>\n");
-          out.write("                                                                        </a>\n");
-          out.write("                                                                    </td>\n");
-          out.write("                                                                </tr> \n");
-          out.write("                                                            ");
-          int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
-          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-            break;
-        } while (true);
-      }
-      if (_jspx_th_c_forEach_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-        return true;
-      }
-    } catch (Throwable _jspx_exception) {
-      while (_jspx_push_body_count_c_forEach_0[0]-- > 0)
-        out = _jspx_page_context.popBody();
-      _jspx_th_c_forEach_0.doCatch(_jspx_exception);
-    } finally {
-      _jspx_th_c_forEach_0.doFinally();
-      _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_0);
-    }
     return false;
   }
 }

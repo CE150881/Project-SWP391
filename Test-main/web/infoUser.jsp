@@ -112,8 +112,8 @@
 
             <ul style="list-style-type: none; margin: 30px; padding: 30px; width: 300px; background-color: #dc0000; font-family: Alata; font-size: 1.3rem">
                 <li><a href="infoUser.jsp" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Thông tin tài khoản</a></li>
-                <li><a href="updateUser" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa thông tin</a></li>
-                <li><a href="updatePass" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa mật khẩu</a></li>              
+                <li><a href="updateUser.jsp" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa thông tin</a></li>
+                <li><a href="updatePass.jsp" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa mật khẩu</a></li>              
             </ul> 
 
 

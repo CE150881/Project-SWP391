@@ -509,7 +509,63 @@ public class DAO {
         }
         return null;
     }
+    
+//  check trùng PHONE
+    public boolean checkExistPhone(String phone) throws SQLException, ClassNotFoundException{
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try {
+            con = DBConnection.getConnection();
+            String sql = "Select userName "
+                    + "From user "
+                    + "Where userPhone = ?";
+            ps = con.prepareStatement(sql);
+            ps.setString(1, phone);
+            rs = ps.executeQuery();
+            if (rs.next()){
+                return true;
+            }
+        } finally {
+            if (rs != null){
+                rs.close();
+            }
+            if (ps != null){
+                ps.close();
+            }
+            if (con != null){
+                con.close();
+            }
+        }
+        return false;
+    }
 
+//    check trùng email
+        public boolean checkExistEmail(String email) throws SQLException, ClassNotFoundException{
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try {
+            con = DBConnection.getConnection();
+            String sql = "Select userName "
+                    + "From user "
+                    + "Where userEmail = ?";
+            ps = con.prepareStatement(sql);
+            ps.setString(1, email);
+            rs = ps.executeQuery();
+            if (rs.next()){
+                return true;
+            }
+        } finally {
+            if (ps != null){
+                ps.close();
+            }
+            if (con != null){
+                con.close();
+            }
+        }
+        return false;
+    }
     public static void main(String[] args) {
         DAO dao = new DAO();
 

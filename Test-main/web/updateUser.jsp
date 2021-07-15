@@ -35,6 +35,18 @@
     </head>
     <body class="u-body" <c:if test="${not empty requestScope.UPDATEFAILED}">
           onload="loadMessage()"
+        </c:if>
+        <c:if test="${not empty requestScope.PHONEFAILED}">
+            onload="checkPhoneNull()"
+        </c:if>
+        <c:if test="${not empty requestScope.EMAILFAILED}">
+            onload="checkEmailNull()"
+        </c:if> 
+        <c:if test="${not empty requestScope.PHONEEXIST}">
+            onload="checkPhoneExist()"
+        </c:if> 
+        <c:if test="${not empty requestScope.EMAILEXIST}">
+            onload="checkEmailExist()"
         </c:if>>
 
 
@@ -115,16 +127,16 @@
 
             <ul style="list-style-type: none; margin: 30px; padding: 30px; width: 300px; background-color: #dc0000; font-family: Alata; font-size: 1.3rem">
                 <li><a href="infoUser.jsp" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Thông tin tài khoản</a></li>
-                <li><a href="updateUser" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa thông tin</a></li>
-                <li><a href="updatePass" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa mật khẩu</a></li>              
+                <li><a href="updateUser.jsp" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa thông tin</a></li>
+                <li><a href="updatePass.jsp" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa mật khẩu</a></li>              
             </ul> 
 
 
             <form action="updateUser" method="POST" style="width: 500px; font-family: Alata; font-size: 1.5rem; margin: -240px 0 50px 600px">            
                 <label>Phone</label>
-                <input type="text" name="txtPhone" maxlength="10" pattern="[0][0-9]{9}" value="${sessionScope.acc.userPhone}" title="Nhập 10 kí tự chỉ bao gồm số." style="margin-left: 20px; height: 45px"/><br><br>
+                <input type="text" name="txtPhone" maxlength="10" pattern="[0][0-9]{9}" value="${sessionScope.acc.userPhone}" required title="Nhập 10 kí tự chỉ bao gồm số." style="margin-left: 20px; height: 45px"/><br><br>
                 <label>Email</label>
-                <input type="text" name="txtEmail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" value="${sessionScope.acc.userEmail}" style="margin-left: 25px; height: 45px; "/><br><br>
+                <input type="text" name="txtEmail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" value="${sessionScope.acc.userEmail}" required style="margin-left: 25px; height: 45px; "/><br><br>
                 <label>Gender</label>
                 <select name="txtGender" required="required" style="margin-left: 5px; height: 45px; width: 279.2px">
                     <option value="Other">Không cung cấp</option>
@@ -157,6 +169,18 @@
     <script>
         function loadMessage() {
             alert("${requestScope.UPDATEFAILED}");
+        }
+        function checkPhoneNull() {
+            alert("${requestScope.PHONEFAILED}");
+        }
+        function checkEmailNull() {
+            alert("${requestScope.EMAILFAILED}");
+        }
+        function checkPhoneExist() {
+            alert("${requestScope.PHONEEXIST}");
+        }
+        function checkEmailExist() {
+            alert("${requestScope.EMAILEXIST}");
         }
     </script>
 </html>

@@ -75,7 +75,7 @@ public class CartControl extends HttpServlet {
             txt = txt + "#" + id;
         }
         Cookie c = new Cookie("id", txt);
-        c.setMaxAge(60*5);
+        c.setMaxAge(60*60);
         response.addCookie(c);
         response.sendRedirect("print");
     }

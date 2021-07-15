@@ -119,8 +119,8 @@
 
             <ul style="list-style-type: none; margin: 30px; padding: 30px; width: 300px; background-color: #dc0000; font-family: Alata; font-size: 1.3rem">
                 <li><a href="infoUser.jsp" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Thông tin tài khoản</a></li>
-                <li><a href="updateUser" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa thông tin</a></li>
-                <li><a href="updatePass" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa mật khẩu</a></li>              
+                <li><a href="updateUser.jsp" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa thông tin</a></li>
+                <li><a href="updatePass.jsp" style="display: block; color: white; padding: 8px 16px; text-decoration: none">Chỉnh sửa mật khẩu</a></li>              
             </ul> 
 
 
@@ -128,9 +128,9 @@
                 <label>Mật khẩu cũ</label>
                 <input type="password" name="txtPasswordCurrent" value="${pass}" style="margin-left: 159px; height: 45px"/><br><br>
                 <label>Mật khẩu mới</label>
-                <input type="password" name="txtNewPassword" minlength="8" maxlength="20" value="${newpass}" title="Nhập 8 đến 20 kí tự" style="margin-left: 143px; height: 45px; "/><br><br>
+                <input type="password" name="txtNewPassword" minlength="8" maxlength="20" value="${newpass}" required title="Nhập 8 đến 20 kí tự" style="margin-left: 143px; height: 45px; "/><br><br>
                 <label>Xác nhận mật khẩu mới</label>
-                <input type="password" name="txtReNewPassword" minlength="8" maxlength="20" value="${renewpass}" style="margin-left: 300px; height: 45px; display: flex; position: relative; top: -40px"/><br><br>
+                <input type="password" name="txtReNewPassword" minlength="8" maxlength="20" value="${renewpass}" required style="margin-left: 300px; height: 45px; display: flex; position: relative; top: -40px"/><br><br>
                 <button type="submit" style="border-radius: 8px; width: 80px; height: 40px; background-color: #dc0000; color: white; align-items: center; border-color: #dc0000; display: flex; position: relative; top: -45px; left: 230px">SAVE</button>            
             </form>
 

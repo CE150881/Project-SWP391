@@ -50,7 +50,7 @@ public class SignupControl extends HttpServlet {
             request.setAttribute("pass", pass);
             request.setAttribute("re_pass", re_pass);
             request.getRequestDispatcher("signup.jsp").forward(request, response);
-
+            
         } else {
             DAO dao = new DAO();
             User u = dao.checkAccountExist(user);

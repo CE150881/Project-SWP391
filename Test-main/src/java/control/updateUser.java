@@ -26,8 +26,10 @@ import javax.servlet.http.HttpSession;
  */
 @WebServlet(name = "updateUser", urlPatterns = {"/updateUser"})
 public class updateUser extends HttpServlet {
+
     private final String Success_Page = "logout";
     private final String Falied_Page = "updateUser.jsp";
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -42,22 +44,46 @@ public class updateUser extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         /* TODO output your page here. You may use following sample code. */
-        String url = Falied_Page;
+        String url = Success_Page;
         String phone = request.getParameter("txtPhone");
         String email = request.getParameter("txtEmail");
         String gender = request.getParameter("txtGender");
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("acc");
         String username = user.getUserName();
-        
+//        check null
+        if (phone.isEmpty()) {
+            String msg = "Số điện thoại không được để trống";
+            request.setAttribute("PHONEFAILED", msg);
+            url = Falied_Page;
+        }
+        if (email.isEmpty()) {
+            String msg = "Email của bạn không được để trống";
+            request.setAttribute("EMAILFAILED", msg);
+            url = Falied_Page;
+        }
         try {
             DAO dao = new DAO();
-            boolean result = dao.updateUser(email, phone, gender, username);
-            if (result){
-                url = Success_Page;
+            boolean existPhone = dao.checkExistPhone(phone);
+            boolean existEmail = dao.checkExistEmail(email);
+            if (existPhone && !user.getUserPhone().equals(phone) ) {
+                String msg = "Số điện thoại của bạn đã trùng với một số điện thoại khác";
+                request.setAttribute("PHONEEXIST", msg);
+                url = Falied_Page;
             } else {
-                String msg = "Update Failed";
-                request.setAttribute("UPDATEFAILED", msg);
+                if (existEmail && !user.getUserEmail().equals(email)) {
+                    String msg = "Email của bạn đã trùng với một Email khác";
+                    request.setAttribute("EMAILEXIST", msg);
+                    url = Falied_Page;
+                } else {
+                    boolean result = dao.updateUser(email, phone, gender, username);
+                    if (result) {
+                        url = Success_Page;
+                    } else {
+                        String msg = "Update Failed";
+                        request.setAttribute("UPDATEFAILED", msg);
+                    }
+                }
             }
         } catch (SQLException | ClassNotFoundException ex) {
         } finally {
