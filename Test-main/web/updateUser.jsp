@@ -136,7 +136,7 @@
                 <label>Phone</label>
                 <input type="text" name="txtPhone" maxlength="10" pattern="[0][0-9]{9}" value="${sessionScope.acc.userPhone}" required title="Nhập 10 kí tự chỉ bao gồm số." style="margin-left: 20px; height: 45px"/><br><br>
                 <label>Email</label>
-                <input type="text" name="txtEmail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" value="${sessionScope.acc.userEmail}" required style="margin-left: 25px; height: 45px; "/><br><br>
+                <input type="email" name="txtEmail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" value="${sessionScope.acc.userEmail}" required style="margin-left: 25px; height: 45px; "/><br><br>
                 <label>Gender</label>
                 <select name="txtGender" required="required" style="margin-left: 5px; height: 45px; width: 279.2px">
                     <option value="Other">Không cung cấp</option>
