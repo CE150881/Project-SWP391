@@ -12,6 +12,7 @@ import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -42,35 +43,33 @@ public class cart2 extends HttpServlet {
         /* get param to insert bill */
         String total = request.getParameter("txtSum");
         double total2 = Double.parseDouble(total);
-        
+
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("acc");
         String username = user.getUserName();
-        
+
         String address = request.getParameter("txtAddress");
-        
+
         /* get param to insert cart */
-           
-        
         String foodID[] = request.getParameterValues("txtFoodID");
         Integer foodIDInt[] = new Integer[foodID.length];
         for (int i = 0; i < foodID.length; i++) {
             foodIDInt[i] = Integer.parseInt(foodID[i]);
-        }        
+        }
         String foodName[] = request.getParameterValues("txtFoodName");
-        
+
         String foodPrice[] = request.getParameterValues("txtFoodPrice");
         Integer foodPriceInt[] = new Integer[foodPrice.length];
         for (int i = 0; i < foodPrice.length; i++) {
             foodPriceInt[i] = Integer.parseInt(foodPrice[i]);
-        }        
-        
+        }
+
         String amount[] = request.getParameterValues("txtAmount");
         Integer quanlity[] = new Integer[amount.length];
         for (int i = 0; i < foodPrice.length; i++) {
             quanlity[i] = Integer.parseInt(amount[i]);
-        }      
-        
+        }
+
         /* print hoa-don */
         String url = Success_Page;
 
@@ -78,24 +77,32 @@ public class cart2 extends HttpServlet {
             DAO dao = new DAO();
             /* insert bill to database */
             int billID = dao.getLastBillID();
-            System.out.println("billID: " + billID);
-            dao.insertBill(billID, username, total2, address);            
+            dao.insertBill(billID, username, total2, address);
             /* insert cart to database */
             for (int i = 0; i < foodID.length; i++) {
-                dao.insertCart(billID, foodIDInt[i], foodName[i], foodPriceInt[i], quanlity[i]); 
-            }                               
+                dao.insertCart(billID, foodIDInt[i], foodName[i], foodPriceInt[i], quanlity[i]);
+            }
             /* if buy success then print hoa-don.jsp */
             String phone = dao.getTelephone(username);
             request.setAttribute("SUM", total2);
             request.setAttribute("ADDRESS", address);
             request.setAttribute("TELE", phone);
             request.setAttribute("USERNAME", username);
+            Cookie[] cookie = request.getCookies();
+            if (cookie != null) {
+                for (int i = 0; i < cookie.length; i++) {
+                    System.out.println("cook: " + cookie[i].toString());
+                    cookie[i].setMaxAge(0);
+                    response.addCookie(cookie[i]);
+                }
+            }
         } catch (Exception e) {
         } finally {
             RequestDispatcher rd = request.getRequestDispatcher(url);
             rd.forward(request, response);
             out.close();
         }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

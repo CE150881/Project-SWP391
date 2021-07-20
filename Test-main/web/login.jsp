@@ -87,11 +87,11 @@
                 <div class="u-form u-form-1">
                     <p class="text-danger"> ${mess}</p>
                     <form action="login" method="POST" class="u-clearfix u-form-spacing-22 u-form-vertical u-inner-form" style="padding: 29px;" source="custom" name="form">
-                        <div class="u-form-group u-form-group-1">
+                        <div class="u-form-group u-form-group-1" style="outline: none">
                             <label for="text-3332" class="u-form-control-hidden u-label"></label>
                             <input type="text" placeholder="Tên đăng nhập" id="text-3332" name="user" title="Tên đăng nhập không hợp lệ." class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white">
                         </div>
-                        <div class="u-form-group u-form-group-2">
+                        <div class="u-form-group u-form-group-2" style="outline: none">
                             <label for="text-1265" class="u-form-control-hidden u-label"></label>
                             <input type="password" placeholder="Mật khẩu" id="text-1265" name="pass" title="Mật khẩu không hợp lệ." class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-15 u-white" onmouseover="mouseoverPass()" onmouseout="mouseoutPass()">
                         </div>
