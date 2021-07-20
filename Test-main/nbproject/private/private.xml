@@ -13,13 +13,10 @@
             <file>file:/C:/Users/msi-pc/Documents/NetBeansProjects/Testing/src/java/Entity/Category.java</file>
         </group>
         <group name="Group 20210603-05:40:02">
-            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/src/java/dao/DAO.java</file>
-            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/web/infoUser.jsp</file>
-            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/web/updatePass.jsp</file>
-            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/web/updateUser.jsp</file>
-            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/src/java/control/SignupControl.java</file>
-            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/src/java/Entity/User.java</file>
-            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/src/java/control/updateUser.java</file>
+            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/src/java/Entity/Bill.java</file>
+            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/src/java/control/AdminControl.java</file>
+            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/web/adminAllBill.jsp</file>
+            <file>file:/C:/Users/ngonh/OneDrive/Máy%20tính/Project-SWP391/Test-main/src/java/dao/BillDAO.java</file>
         </group>
     </open-files>
 </project-private>

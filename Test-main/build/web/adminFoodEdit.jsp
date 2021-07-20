@@ -7,13 +7,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Edit your food</title>
+        <title>CHỈNH SỬA SẢN PHẨM</title>
         <link rel="stylesheet" href="../../style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
               integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+        <script language="javascript" type="text/javascript">
+            window.onload = function () {
+                var fileUpload = document.getElementById("fileupload");
+                fileUpload.onchange = function () {
+                    if (typeof (FileReader) != "undefined") {
+                        var dvPreview = document.getElementById("dvPreview");
+                        dvPreview.innerHTML = "";
+                        var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.png)$/;
+                        for (var i = 0; i < fileUpload.files.length; i++) {
+                            var file = fileUpload.files[i];
+                            if (regex.test(file.name.toLowerCase())) {
+                                var reader = new FileReader();
+                                reader.onload = function (e) {
+                                    var img = document.createElement("IMG");
+                                    img.height = "150";
+                                    img.width = "150";
+                                    img.src = e.target.result;
+                                    dvPreview.appendChild(img);
+                                }
+                                reader.readAsDataURL(file);
+                            } else {
+                                alert(file.name + " is not a valid image file.");
+                                dvPreview.innerHTML = "";
+                                return false;
+                            }
+                        }
+                    } else {
+                        alert("This browser does not support HTML5 FileReader.");
+                    }
+                }
+            };
+        </script>
     </head>
 
     <body>
@@ -37,30 +68,30 @@
                         <div class="input-form">
                             <span>Tên Món Ăn</span>
                             <input type="text"
+                                   required="required"
                                    name="foodName"
                                    placeholder="FoodName"
-                                   pattern="{3,30}"
-                                   title="Vui Lòng nhập chữ cái (từ 3 đến 30 ký tự)"
+                                   pattern="[A-Za-zaàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz\s]{3,30}"
+                                   title="Vui Lòng nhập chữ cái (từ 3 đến 30 ký tự), không số, ký tự đặc biệt"
                                    value="<%= f.getFoodName() %>">
                         </div>
                         <div class="input-form">
                             <span>Giá Món Ăn</span>
-                            <input name="foodPrice" value="<%= f.getFoodPrice() %>" type="number"  placeholder="FoodPrice" min="20000" max="500000" pattern="[3-9]|[1-3][0-9]|4[0-2]" title="Vui Lòng nhập số từ 20000 đến 500000">
+                            <input name="foodPrice" required="required" value="<%= f.getFoodPrice() %>" type="number"  placeholder="FoodPrice" min="10000" max="500000" pattern="[0-9]" title="Vui Lòng nhập số từ 10000 đến 500000">
                         </div>
                         <div class="input-form">
+                            <div class="input-form">
                             <span>Hình Món Ăn</span>
                             <div class="controls">
-                                <div class="center">
-                                    <img src="../../upload/<%= image %>" height="200px" width="300px" >
-                                    <div class="form-input">
-                                        <label for="file-ip-1">Upload Image</label>
-                                        <input type="file" value="Upload file" name="hinhanh" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
-                                        <div class="preview">
-                                            
-                                            
-                                            <img id="file-ip-1-preview">
-                                        </div>
-                                    </div>
+                                <input id="fileupload" type="file" accept=".png, .jpg"  multiple="multiple" name="hinhanh"/>
+                                <hr />
+                                <b>Live Preview </b>
+                                <br />
+                                <br />
+                                <div id="dvPreview">
+                                    <img src="../../upload/<%= image %>" height="150px" width="150px" >
+                                </div>
+                                <div id="dvPreview">
                                 </div>
                             </div>
                             <div class="input-form">
@@ -69,7 +100,7 @@
                                     <select name="categoryID" data-placeholder="" id="selectError2" data-rel="chosen">
                                         
 
-                                        <optgroup label="Thể Loại">
+                                        <optgroup label="Phân Loại">
                                             <%
                                             ResultSet rs = (ResultSet)session.getAttribute("category");
                                             int categoryID = f.getCategoryID();
@@ -99,12 +130,7 @@
 
 
                     </form>
-                    <h3>Cơm Gà Lê Trang</h3>
-                    <ul class="icon-dang-nhap">
-                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-google" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                    </ul>
+                    
                 </div>
             </div>
             <!--Kết Thúc Phần Nội Dung-->

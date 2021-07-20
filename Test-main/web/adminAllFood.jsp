@@ -12,7 +12,7 @@
 
         <!-- start: Meta -->
         <meta charset="utf-8">
-        <title>Quản lí sản phẩm</title>
+        <title>QUẢN LÍ SẢN PHẨM</title>
         <meta name="description" content="Bootstrap Metro Dashboard">
         <meta name="author" content="Dennis Ji">
         <meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
@@ -70,7 +70,7 @@
                                 <ul class="dropdown-menu">
                                     
                                     
-                                    <li><a href="<%= request.getContextPath()%>/logout"><i class="halflings-icon off"></i>Đăng xuất</a></li>
+                                    <li><a href="<%= request.getContextPath()%>/home"><i class="halflings-icon off"></i>Đăng xuất</a></li>
                                 </ul>
                             </li>
                             <!-- end: User Dropdown -->
@@ -166,7 +166,7 @@
                                                     <i class="halflings-icon white edit"></i>  
                                                 </a>
 
-                                                <a class="btn btn-danger" href="delete/<%= rs.getString("foodID")%>" onclick="return confirm('Are you sure?');">
+                                                <a class="btn btn-danger" href="delete/<%= rs.getString("foodID")%>" onclick="return confirm('Bạn chắc chắn chưa?');">
                                                     <i class="halflings-icon white trash"></i> 
                                                 </a>
                                             </td>

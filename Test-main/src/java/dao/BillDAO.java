@@ -17,11 +17,11 @@ import java.util.logging.Logger;
  * @author msi-pc
  */
 public class BillDAO {
-
+    // Get all bill information
     public static ResultSet getAllBill() {
         try {
             Statement st = DBConnection.getConnection().createStatement();
-            ResultSet rs = st.executeQuery("select * from bill");
+            ResultSet rs = st.executeQuery("SELECT * FROM `bill` NATURAL JOIN `cart`s");
             return rs;
         } catch (SQLException ex) {
             Logger.getLogger(CategoryDAO.class.getName()).log(Level.SEVERE, null, ex);

@@ -70,7 +70,7 @@
                                 <ul class="dropdown-menu">
                                     
                                     
-                                    <li><a href="<%= request.getContextPath()%>/logout"><i class="halflings-icon off"></i>Đăng xuất</a></li>
+                                    <li><a href="<%= request.getContextPath()%>/home"><i class="halflings-icon off"></i>Đăng xuất</a></li>
                                 </ul>
                             </li>
                             <!-- end: User Dropdown -->
@@ -143,6 +143,9 @@
 
                                             <th>Mã Hóa Đơn</th>
                                             <th>Tên Khách Hàng</th>
+                                            <th>Tên Món Ăn</th>
+                                            <th>Đơn Giá</th>
+                                            <th>Số Lượng</th>
                                             <th>Tổng Cộng</th>
                                             <th>Địa Chỉ</th>
                                             <th>Thời Gian</th>
@@ -158,6 +161,9 @@
 
                                             <td><%= rs.getString("billID")%></td>
                                             <td><%= rs.getString("userName")%></td>
+                                            <td><%= rs.getString("foodName")%></td>
+                                            <td><%= rs.getString("foodPrice")%></td>
+                                            <td><%= rs.getString("quantity")%></td>
                                             <td><%= rs.getString("total")%></td>
                                             <td><%= rs.getString("address")%></td>
                                             <td><%= rs.getTimestamp("date")%></td>

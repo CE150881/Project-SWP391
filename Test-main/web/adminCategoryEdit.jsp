@@ -12,7 +12,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Add your food</title>
+        <title>CHỈNH SỬA PHÂN LOẠI</title>
         <link rel="stylesheet" href="../../style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -41,11 +41,12 @@
                             <input type="text" name="categoryID" value="<%= c.getCategoryID() %>" style="display: none">
                             <span>Phân loại món ăn</span>
                             <input type="text"
+                                   required="required"
                                    name="categoryName"
                                    value="<%= c.getCategoryName() %>"
                                    placeholder=""
-                                   pattern="{3,30}"
-                                   title="Vui Lòng nhập chữ cái (từ 3 đến 30 ký tự)">
+                                   pattern="[A-Za-zaàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz\s]{3,30}"
+                                   title="Vui Lòng nhập chữ cái (từ 3 đến 30 ký tự), không số, ký tự đặc biệt">
                         </div>
                         
                             <div class="input-form">
@@ -55,12 +56,7 @@
 
 
                     </form>
-                    <h3>Cơm Gà Lê Trang</h3>
-                    <ul class="icon-dang-nhap">
-                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-google" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                    </ul>
+                    
                 </div>
             </div>
             <!--Kết Thúc Phần Nội Dung-->

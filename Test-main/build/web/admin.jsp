@@ -11,7 +11,7 @@
 
         <!-- start: Meta -->
         <meta charset="utf-8">
-        <title>Quản lí sản phẩm</title>
+        <title>ADMIN</title>
         <meta name="description" content="Bootstrap Metro Dashboard">
         <meta name="author" content="Dennis Ji">
         <meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
@@ -69,7 +69,7 @@
                                 <ul class="dropdown-menu">
                                     
                                     
-                                    <li><a href="<%= request.getContextPath()%>/logout"><i class="halflings-icon off"></i>Đăng xuất</a></li>
+                                    <li><a href="<%= request.getContextPath()%>/home"><i class="halflings-icon off"></i>Đăng xuất</a></li>
                                 </ul>
                             </li>
                             <!-- end: User Dropdown -->
