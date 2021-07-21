@@ -120,14 +120,14 @@
                     <span style="font-size: 1rem; font-weight: 700;">1/ Hướng dẫn đặt phần ăn </span>
                     <br>
                     <br>Để đặt phần ăn trên web<span style="font-weight: 400;">site<span style="font-style: italic; text-decoration: underline !important;">
-                            <a href="www.comgaletrang.com.vn" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-3 u-btn-1"> www.comgaletrang.com.vn </a>
+                            <a href="home" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-3 u-btn-1"> www.comgaletrang.com.vn </a>
                         </span>, k<span style="font-weight: 400;">hách hàng có thể thực hiện theo 02 cách thức như sau: <br>
                         </span>
                     </span>
                     <span style="font-weight: 400;">
                         <br>
                         <span style="font-weight: 700;">Cách 1: Đặt phần ăn trực tuyến trên website <span style="text-decoration: underline !important; font-style: italic;">
-                                <a href="www.comgaletrang.com.vn" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-3 u-btn-2">www.comgaletrang.com.vn</a>
+                                <a href="home" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-3 u-btn-2">www.comgaletrang.com.vn</a>
                             </span> : 
                         </span>
                     </span>

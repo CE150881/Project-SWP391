@@ -41,7 +41,7 @@ public class SearchFood extends HttpServlet {
         DAO dao = new DAO();
         List<Food> list = dao.searchFoodByName(txtSearch);
         List<Category> listC = dao.getAllCategory();
-        System.out.println("lít: " + list);
+         
         request.setAttribute("listF", list);
         request.setAttribute("listCC", listC);
         request.getRequestDispatcher("menu.jsp").forward(request, response);

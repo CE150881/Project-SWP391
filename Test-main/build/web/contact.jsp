@@ -131,7 +131,7 @@
                         <iframe class="embed-responsive-item" src="//maps.google.com/maps?output=embed&amp;q=F8%20M%E1%BA%ADu%20Th%C3%A2n%2C%20P%2C%20Ninh%20Ki%E1%BB%81u%2C%20C%E1%BA%A7n%20Th%C6%A1%2C%20Vi%E1%BB%87t%20Nam&amp;z=10&amp;t=m" data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIyRjglMjBNJUUxJUJBJUFEdSUyMFRoJUMzJUEybiUyQyUyMFAlMkMlMjBOaW5oJTIwS2klRTElQkIlODF1JTJDJTIwQyVFMSVCQSVBN24lMjBUaCVDNiVBMSUyQyUyMFZpJUUxJUJCJTg3dCUyME5hbSUyMiUyQyUyMnpvb20lMjIlM0ExMCUyQyUyMnR5cGVJZCUyMiUzQSUyMnJvYWQlMjIlMkMlMjJsYW5nJTIyJTNBJTIyJTIyJTdE"></iframe>
                     </div>
                 </div>
-                <div class="u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="1500" data-image-height="1500" data-href="TRANG-CHỦ.html" data-page-id="150508545"></div>
+                <div class="u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="1500" data-image-height="1500" data-href="home" data-page-id="150508545"></div>
             </div>
         </section>
 

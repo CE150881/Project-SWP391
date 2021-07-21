@@ -70,7 +70,7 @@
                                 <ul class="dropdown-menu">
                                     
                                     
-                                    <li><a href="<%= request.getContextPath()%>/home"><i class="halflings-icon off"></i>Đăng xuất</a></li>
+                                    <li><a href="<%= request.getContextPath()%>/logout"><i class="halflings-icon off"></i>Đăng xuất</a></li>
                                 </ul>
                             </li>
                             <!-- end: User Dropdown -->

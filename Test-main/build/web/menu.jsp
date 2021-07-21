@@ -114,7 +114,7 @@
             <div class="u-form u-form-1">
                 <form action="search" method="post">                   
                     <input type="text" name="search"/>
-                    <button type="submit" value="tim kiem"><i class="fa fa-search"></i>Tìm kiếm</button>                  
+                    <button type="submit"><i class="fa fa-search"></i>Tìm kiếm</button>                  
                 </form>
             </div>
 
@@ -140,9 +140,9 @@
                                     </ul>
 
 
-                                    <div class="u-tab-content">
+                                    <div class="row" id="content">
                                         <div>
-                                            <div>
+                                            <div >
                                                 <c:forEach items="${listF}" var="o">
                                                     <div>
                                                         <div style="display: block; float: left; text-align: center; width: 300px; padding: 40px 10px 25px 75px">
@@ -200,5 +200,6 @@
                                         <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
                                         <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
                                     </span>
+
                                     </body>
                                     </html>
