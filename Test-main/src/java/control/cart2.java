@@ -88,14 +88,19 @@ public class cart2 extends HttpServlet {
             request.setAttribute("ADDRESS", address);
             request.setAttribute("TELE", phone);
             request.setAttribute("USERNAME", username);
-            Cookie[] cookie = request.getCookies();
+
+            // Cookie[] cookie = request.getCookies();
+            Cookie cookie = new Cookie("id", "");
+            cookie.setMaxAge(0);
+            response.addCookie(cookie);
+            /* Cookie[] cookie = request.getCookies();
             if (cookie != null) {
                 for (int i = 0; i < cookie.length; i++) {
                     System.out.println("cook: " + cookie[i].toString());
                     cookie[i].setMaxAge(0);
                     response.addCookie(cookie[i]);
                 }
-            }
+            } */
         } catch (Exception e) {
         } finally {
             RequestDispatcher rd = request.getRequestDispatcher(url);
